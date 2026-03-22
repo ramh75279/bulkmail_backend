@@ -6,7 +6,7 @@ const mongoose = require("mongoose")
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect("mongodb://127.0.0.1:27017/passkey").then(function () {
+mongoose.connect("mongodb+srv://ramh81069_db_user:12hariram34@cluster0.2sbvxjh.mongodb.net/passkey?appName=Cluster0").then(function () {
     console.log("connected to DB successfully")
 }).catch(function () {
     console.log("not connected to db")
